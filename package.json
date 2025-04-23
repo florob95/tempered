@@ -1,14 +1,14 @@
 {
-  "name": "@foundry/tempered",
+  "name": "tempered",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An ESLint and Prettier configuration package for Node.js projects, providing strict linting rules and automatic code formatting.",
   "main": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "tempered": "./cli.js"
+    "tempered": "cli.js"
   },
   "author": "florob95",
   "license": "MIT",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/florob95/tempered"
+    "url": "git+https://github.com/florob95/tempered.git"
   },
   "keywords": [
     "eslint",
