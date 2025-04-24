@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40foundry%2Ftempered.svg)](https://badge.fury.io/js/%40foundry%2Ftempered)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-**Tempered** is an ESLint and Prettier configuration package designed for Node.js projects. It provides a strict, consistent, and optimized setup for linting and formatting your code.
+**Tempered** is an ESLint and Prettier configuration package designed for js/ts projects. It provides a strict, consistent, and optimized setup for linting and formatting your code.
 
 ## Features
 
@@ -18,4 +18,5 @@
 To get started with **Tempered**, install it as a development dependency in your project:
 
 ```bash
-npm install --save-dev @foundry/tempered
+npm install --save-dev tempered
+```
