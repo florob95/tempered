@@ -1,7 +1,7 @@
 {
   "name": "tempered",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An ESLint and Prettier configuration package for Node.js projects, providing strict linting rules and automatic code formatting.",
   "main": "cli.js",
   "exports": {
