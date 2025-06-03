@@ -13,6 +13,8 @@ program
       Available commands:
       - help : Display help for available commands
       - eslint [options] : Run ESLint with the provided options
+      - eslint:light [options] : Run ESLint with the provided options on the light conf
+      - prettier [options] : Run prettier with the provided options
     `)
   })
 
