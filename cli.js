@@ -2,6 +2,7 @@
 
 import { Command } from 'commander'
 import { execa } from 'execa'
+import path from 'node:path'
 
 const program = new Command()
 
@@ -26,10 +27,21 @@ program
     try {
       const eslintArguments = [...files]
 
-      const { stderr, stdout } = await execa('npx', [
-        'eslint',
-        ...eslintArguments,
-      ])
+      const { stderr, stdout } = await execa(
+        path.resolve(
+          process.cwd(),
+          'node_modules',
+          'tempered',
+          'node_modules',
+          '.bin',
+          process.platform === 'win32' ? 'eslint.cmd' : 'eslint',
+        ),
+        [
+          '--config',
+          './node_modules/tempered/configs/strict.config.js',
+          ...eslintArguments,
+        ],
+      )
       console.log(stdout)
 
       if (stderr) {
@@ -48,12 +60,21 @@ program
     try {
       const eslintArguments = [...files]
 
-      const { stderr, stdout } = await execa('npx', [
-        'eslint',
-        '--config',
-        './configs/light.config.js',
-        ...eslintArguments,
-      ])
+      const { stderr, stdout } = await execa(
+        path.resolve(
+          process.cwd(),
+          'node_modules',
+          'tempered',
+          'node_modules',
+          '.bin',
+          process.platform === 'win32' ? 'eslint.cmd' : 'eslint',
+        ),
+        [
+          '--config',
+          './node_modules/tempered/configs/light.config.js',
+          ...eslintArguments,
+        ],
+      )
       console.log(stdout)
 
       if (stderr) {
@@ -72,10 +93,17 @@ program
     try {
       const prettierArguments = [...files]
 
-      const { stderr, stdout } = await execa('npx', [
-        'prettier',
-        ...prettierArguments,
-      ])
+      const { stderr, stdout } = await execa(
+        path.resolve(
+          process.cwd(),
+          'node_modules',
+          'tempered',
+          'node_modules',
+          '.bin',
+          process.platform === 'win32' ? 'prettier.cmd' : 'prettier',
+        ),
+        ['--config', './node_modules/tempered/.prettierrc', ...prettierArguments],
+      )
       console.log(stdout)
 
       if (stderr) {

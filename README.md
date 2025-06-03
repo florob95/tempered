@@ -4,12 +4,11 @@
 
 ## Features
 
-- ✅ **Strict ESLint configuration** for consistency and best practices  
-- 🎯 **Prettier integration** for automatic code formatting  
-- 🧩 Plugin-based setup with community-adopted ESLint plugins  
-- 📦 Handles import sorting, unused code cleanup, and more  
-- ⚙️ Dual mode: use via CLI or as an extendable ESLint config  
-
+- ✅ **Strict ESLint configuration** for consistency and best practices 
+- 🎯 **Prettier integration** for automatic code formatting 
+- 🧩 Plugin-based setup with community-adopted ESLint plugins 
+- 📦 Handles import sorting, unused code cleanup, and more 
+- ⚙️ Dual mode: use via CLI or as an extendable ESLint config 
 
 ## Installation
 
@@ -18,6 +17,7 @@ Install **Tempered** as a development dependency:
 ```bash
 npm install --save-dev tempered
 ```
+
 Note: For config extension, you must also install the required peer dependencies (see below).
 
 ## 🔧 Usage
@@ -45,7 +45,7 @@ import strict from '@foundry/tempered/configs/strict.config.js'
 export default strict
 ```
 
-OR 
+OR
 
 **Light config (recommended):**
 
@@ -56,7 +56,9 @@ export default strict
 ```
 
 ## Required peerDependencies
+
 If you're using Tempered as a config extension (mode 2), make sure to install the following peer dependencies in your project:
+
 ```bash
 npm install --save-dev \
 eslint \
@@ -72,6 +74,7 @@ eslint-plugin-unicorn \
 eslint-plugin-unused-imports \
 globals
 ```
+
 Or install all at once via:
 
 ```bash
