@@ -1,13 +1,13 @@
 {
   "name": "tempered",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An ESLint and Prettier configuration package for Node.js projects, providing strict linting rules and automatic code formatting.",
   "main": "cli.js",
   "exports": {
-  "./light": "./configs/light.config.js",
-  "./strict": "./configs/strict.config.js"
-},
+    "./light": "./configs/light.config.js",
+    "./strict": "./configs/strict.config.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
